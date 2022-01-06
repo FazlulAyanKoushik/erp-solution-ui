@@ -1,0 +1,47 @@
+<div class="add-dialog" >
+    <h2>
+      Add New Cash  
+    </h2>
+    <div>
+        <div class='form-container'>
+            <mat-form-field class="add-input" appearance="outline">
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="name" type="text" formControlName="productName" required>
+              <mat-error></mat-error>
+            </mat-form-field>
+
+          </div>
+    </div>
+    <div>
+        <mat-checkbox class="example-margin">Is Sub Account</mat-checkbox>
+    </div>
+    <div class="form-container">
+    <mat-form-field *ngIf="isSubCategory" class="add-input" appearance="outline">
+      <mat-label>Category</mat-label>
+      <mat-select [disableOptionCentering]="true" #select placeholder="Select category" 
+                  (selectionChange)="onSelectCategory($event)"
+                  formControlName="category">
+        <mat-select-filter [placeholder]="'Filter Category List'"
+                           *ngIf="select.focused"
+                           [array]="categories"
+                           [displayMember]="'categoryName'"
+                           (filteredReturn)="filteredCatList = $event"></mat-select-filter>
+        <mat-option *ngFor="let cat of filteredCatList" [value]="cat._id">
+          {{cat.categoryName}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="button-container">
+    <div class="bottom-action-view">
+        <button mat-raised-button type="button"  color="warn">
+          Cancel
+        </button>
+      </div>
+      <div class="bottom-action-view">
+        <button  mat-raised-button type="button"  color="warn">
+          Save
+        </button>
+      </div>
+  </div>
+</div>

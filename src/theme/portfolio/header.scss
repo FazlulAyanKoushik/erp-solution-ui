@@ -1,0 +1,251 @@
+@import 'src/theme/variables';
+
+.header-area {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7vh 2.5vw;
+  height: auto;
+}
+
+.profile-info {
+  display: block;
+  text-align: center;
+  margin-bottom: 6vh;
+}
+
+.profile-img {
+  border: solid 1px #FFF;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px auto;
+  position: relative;
+}
+
+.online {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #8CF29A;
+  border: 3px solid #fff;
+  position: absolute;
+  bottom: 5px;
+  right: 3px;
+}
+
+.profile-img img {
+  display: block;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+
+
+}
+
+.profile-title {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.profile-title h2 {
+  color: $heading-color;
+  font-family: $font-en-josh;
+  font-style: normal;
+  font-weight: 500;
+  display: block;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 2px;
+}
+
+.profile-title h4 {
+  color: $primary-color;
+  font-family: $font-en-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  display: block;
+}
+
+/*** menu-area ***/
+.menu-area {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 6vh;
+}
+
+.menu-area ul {
+  list-style: none;
+  display: block;
+  width: 100%;
+}
+
+.menu-area ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.menu-area ul li a {
+  color: $primary-color;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  transition: all 0.2s linear;
+}
+
+.menu-area ul li a i {
+  display: inline-block;
+  color: $primary-color;
+  font-size: 17px;
+  margin-right: 15px;
+  vertical-align: middle;
+  transition: all 0.2s linear;
+}
+
+.menu-area ul li:first-child a {
+  background-color: $white-color;
+}
+
+.menu-area ul li:first-child a i {
+  color: $secondery-color;
+}
+
+.menu-area ul li a:hover {
+  transform: translateX(6px);
+  // background-color: #fff;
+}
+
+// .menu-area ul li a:hover i{
+//     color: #FF6525;
+// }
+
+/***** header-footer-area ***/
+.header-footer-area {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.social-menu {
+  display: block;
+  margin-bottom: 20px;
+
+}
+
+.social-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-menu ul li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.social-menu ul li:last-child {
+  margin-right: 0;
+}
+
+.social-menu ul li a {
+  color: #33303E;
+  font-size: 15px;
+  background: $white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 33px;
+  font-weight: 500;
+  width: 33px;
+  -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  transition: all 0.3s linear;
+
+}
+
+.social-menu ul li:nth-child(1) a {
+  color: #3b5998;
+
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.social-menu ul li:nth-child(2) a {
+  color: #1DA1F2;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #1DA1F2;
+  color: #fff;
+}
+
+.social-menu ul li:nth-child(3) a {
+  color: $secondery-color;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: $secondery-color;
+  color: #fff;
+}
+
+.social-menu ul li:nth-child(4) a {
+  color: #EA4C89;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #EA4C89;
+  color: #fff;
+}
+
+.social-menu ul li:nth-child(5) a {
+  color: #000000;
+}
+
+.social-menu ul li:nth-child(5) a:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.ntt {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.ntt span {
+  display: block;
+  color: #999;
+  font-weight: 400;
+  font-family: $font-en-primary;
+  font-style: normal;
+  font-size: 16px;
+}
+
+@media(max-width: 1200px) {
+  .menu-area ul li:first-child a {
+    background-color: transparent;
+  }
+}

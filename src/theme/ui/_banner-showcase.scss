@@ -1,0 +1,108 @@
+@import "src/theme/variables";
+
+/*** banner-area ***/
+.banner-area{
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 70px 0 20px 0;
+  text-align: center;
+}
+.banner-details{
+  display: block;
+}
+.banner-heading h1{
+  color: #0866c4;
+  font-weight: 800;
+  font-style: normal;
+  font-family: $font-en-roboto;
+  display: block;
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: 1.5px;
+}
+.banner-page-title h2{
+  color: #2d407e;
+  font-weight: 800;
+  font-style: normal;
+  font-family: $font-en-roboto;
+  display: block;
+  font-size: 44px;
+  margin-bottom: 12px;
+  line-height: 50px;
+}
+.banner-page-title h2 sup{
+  font-family: $font-en-helvetica;
+  color: #B1BCDB;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+}
+.banner-description{
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+}
+.banner-description p{
+  color: #a5a5a8;
+  font-weight: 400;
+  font-style: normal;
+  font-family: $font-en-primary;
+  font-size: 17.5px;
+  display: block;
+  line-height: 30px;
+}
+.search-area{
+  display: block;
+  width: 100%;
+  margin-top: 6vh;
+}
+.search-area form{
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.search-area form input{
+  display: block;
+  width: 100%;
+  background-color: #eee;
+  padding: 11px 20px;
+  box-sizing: border-box;
+  border: 1px solid #f3f5f7;
+  outline: none;
+  color: #B1BCDB;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 30px;
+  font-family: $font-en-primary;
+}
+.search-area form button{
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5fa0df;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: $font-en-primary;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 20px;
+  position: absolute;
+  top: 4.2px;
+  right: 4px;
+  transition: all 0.3s linear;
+}
+.search-area form button:hover{
+  background-color: #2d407e;
+}
+/*** banner-end ***/

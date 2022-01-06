@@ -1,0 +1,54 @@
+<section class="admin-data-sec">
+    <div class="title">
+        <div class="title-container1" >
+            <h2>Sales List</h2>
+            <div class="title-mini-container" >
+                <button mat-raised-button color="primary">Settings</button>
+            </div>
+        </div>
+    </div>
+    <hr class="center-square" style="width: 95%;">
+    <div class="sales-container" >
+        <div class="sales-sub-container">
+        <button mat-raised-button [ngClass]="activeComponent == 'asset' ? 'active-btn' : ''"  (click)="onChangeComponent('asset')" >Asset</button>
+        <button mat-raised-button  [ngClass]="activeComponent == 'liability' ? 'active-btn' : ''" (click)="onChangeComponent('liability')" >Liability</button>
+        <button mat-raised-button  [ngClass]="activeComponent == 'income' ? 'active-btn' : ''" (click)="onChangeComponent('income')" >Income</button>
+        <button mat-raised-button  [ngClass]="activeComponent == 'expense' ? 'active-btn' : ''" (click)="onChangeComponent('expense')"  >  Expense</button>
+        </div>
+        
+      </div>
+     
+      <div *ngIf="activeComponent === 'asset'">
+        <app-asset></app-asset>
+      </div>
+      <div *ngIf="activeComponent === 'liability'">
+        <app-liability></app-liability>
+      </div>
+      <div *ngIf="activeComponent === 'income' ">
+        <app-income></app-income>
+      </div>
+      <div *ngIf="activeComponent === 'expense'">
+        <app-expense></app-expense>
+      </div>
+    
+  
+    
+  
+    <!-- <div class="pagination-container">
+      <pagination-controls
+        class="data-pagination"
+        [autoHide]="true"
+        [maxSize]="15"
+        (pageChange)="onPageChanged($event)">
+      </pagination-controls>
+    </div>      -->
+    <!-- END PAGINATION -->
+   
+  
+    <!-- LOADING TEMPLATE -->
+    <!-- <ngx-spinner bdColor="rgba(0, 0, 0, 0.5)" size="medium" color="#fff" type="ball-atom" [fullScreen]="false">
+      <p style="color: white"> Loading... </p>
+    </ngx-spinner> -->
+  
+  </section>
+  

@@ -1,0 +1,110 @@
+@import 'src/theme/variables';
+
+
+#portfolio{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:$font-en-josh;
+    font-style: normal;
+    font-weight: 500;
+    overflow: hidden!important;
+    font-size: 16px;
+    color: #716e79;
+    background: #dff4e4;
+    background-repeat: no-repeat;
+    background: -webkit-linear-gradient(45deg,#dff4e4 0%, #f0ddee 24%, #dee7f5 49%, #e9dae4 73%, #cbffff 100%);
+}
+
+
+/*** defualt-class ***/
+.main-container{
+    display: block;
+    width: 100%;
+    height:100%;
+    box-sizing: border-box;
+    padding: 5vh 3vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+@media(max-width:1200px){
+    .main-container{
+        padding-bottom: 80px;
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width:400px){
+    .main-container{
+        padding: 20px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+}
+.main-container::-webkit-scrollbar{
+    width: 8px;
+    background-color: transparent;
+}
+.main-container::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 25px;
+}
+
+.question{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.question-icon{
+    display: block;
+    margin-right: 7px;
+}
+.question-icon i{
+    color: $secondery-color;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    display: block;
+}
+.question-text{
+    display: block;
+}
+.question-text span{
+    font-family: $font-en-josh;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: $primary-color;
+}
+
+.section-header{
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 7vh;
+}
+.section-header h2{
+    color: $heading-color;
+    font-family: $font-en-primary;
+    font-style: normal;
+    font-size: 33px;
+    line-height: 38px;
+    font-weight: 500;
+    display: block;
+    box-sizing: border-box;
+}
+@media(max-width:600px){
+    .section-header h2{
+        font-size: 30px;
+        line-height: 35px;
+    }
+}

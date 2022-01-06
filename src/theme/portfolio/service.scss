@@ -1,0 +1,243 @@
+@import 'src/theme/variables';
+
+.service-section1 {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 10vh;
+}
+
+.service-section1-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px 25px;
+  width: 100%;
+  height: auto;
+}
+
+@media(max-width: 850px) {
+  .service-section1-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 550px) {
+  .service-section1-main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service-section1 {
+    margin-bottom: 6vh;
+  }
+}
+
+/*** service-section-2 ****/
+.service-section-2 {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 10vh;
+  position: relative;
+}
+
+.testimonial-carousel {
+  display: block;
+  max-width: 770px;
+  width: 100%;
+  margin: auto;
+  margin-top: 4vh;
+}
+
+@media(max-width: 1200px) {
+  .testimonial-carousel {
+    max-width: 830px;
+    width: 100%;
+  }
+}
+
+::ng-deep.testimonial-carousel .owl-carousel .owl-nav .owl-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 50%;
+  padding: 0;
+  font-weight: 500;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: -10%;
+  top: 52%;
+  font-size: 13px;
+  transition: all 0.2s linear;
+  transform: scale(1.05);
+}
+
+::ng-deep.testimonial-carousel .owl-carousel .owl-nav .owl-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 50%;
+  padding: 0;
+  font-weight: 500;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: -10%;
+  font-size: 13px;
+  top: 52%;
+  transition: all 0.2s linear;
+  transform: scale(1.05);
+}
+
+::ng-deep.testimonial-carousel .owl-carousel .owl-nav .owl-prev:hover {
+  color: $secondery-color;
+  transform: scale(0.95);
+  background-color: rgb(255, 217, 201);
+  border-color: transparent;
+}
+
+::ng-deep.testimonial-carousel .owl-carousel .owl-nav .owl-next:hover {
+  color: $secondery-color;
+  transform: scale(0.95);
+  background-color: rgb(255, 217, 201);
+  border-color: transparent;
+}
+
+::ng-deep.testimonial-carousel .owl-carousel .owl-item {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+::ng-deep.testimonial-carousel .owl-theme .owl-dots {
+  margin-top: 10px;
+}
+
+::ng-deep.testimonial-carousel .owl-theme .owl-dots .owl-dot span {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+}
+
+
+::ng-deep.testimonial-carousel .owl-theme .owl-dots .owl-dot.active {
+  background-color: transparent;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  padding: 6px 4px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: relative;
+  bottom: -7px;
+}
+
+@media(max-width: 1200px) {
+  ::ng-deep.testimonial-carousel .owl-carousel .owl-nav {
+    display: none;
+  }
+}
+
+.service-section-3 {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 7vh;
+}
+
+.price-plan-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px 25px;
+  grid-template-rows: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media(max-width: 840px) {
+  .price-plan-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  .price-plan-area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/**** service-section-4 ****/
+.service-section-4 {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 7vh;
+  margin-top: 3vh;
+}
+
+.brand-logo-area {
+  // display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  // grid-gap: 20px 25px;
+  // grid-template-rows: auto;
+  display: block;
+}
+
+.brand-logo {
+  display: block;
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 2px;
+  max-height: 80px;
+}
+
+.brand-logo img {
+  display: block;
+  max-height: 90px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.brand-carousel {
+  display: block;
+  position: relative;
+}
+
+::ng-deep.brand-carousel .owl-carousel .owl-item {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+::ng-deep.brand-carousel .owl-theme .owl-dots {
+  margin-top: 10px;
+}
+
+::ng-deep.brand-carousel .owl-theme .owl-dots .owl-dot span {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+}
+
+::ng-deep.brand-carousel .owl-theme .owl-dots .owl-dot.active {
+  background-color: transparent;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  padding: 6px 4px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: relative;
+  bottom: -7px;
+}

@@ -1,0 +1,329 @@
+@import "../variables";
+
+
+.main-area {
+  max-width: 1480px;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  // padding: 25px 30px;
+  display: grid;
+  grid-template-columns: 500px 1.5fr;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.left-side {
+  background-color: #F2D184;
+  padding: 60px 50px;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-bottom: 15px;
+  max-width: 100px;
+}
+
+.logo svg {
+  fill: #866118;
+  fill-opacity: 0.8;
+}
+
+.left-heading {
+  display: block;
+}
+
+.left-heading h3 {
+  color: #866118;
+  font-family: $font-en-primary;
+  font-size: 23px;
+  font-weight: 600;
+  width: 90%;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.left-img {
+  margin-top: 10%;
+}
+
+.form-nav-area {
+  text-align: right;
+  display: block;
+  padding: 25px 30px;
+  box-sizing: border-box;
+}
+
+.form-nav-area p {
+  display: block;
+  color: $color-black;
+  font-family: $font-en-open-sans;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form-nav-area p a {
+  display: inline-block;
+  margin-left: 3px;
+  color: #4f3cc9;
+  font-family: $font-en-open-sans;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main-form {
+  display: block;
+  max-width: 550px;
+  margin: auto;
+  width: 100%;
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+}
+
+.form-heading {
+  display: block;
+  margin-bottom: 26px;
+}
+
+.form-heading h2 {
+  font-family: $font-en-primary;
+  color: $color-black;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+
+}
+
+.google-btn {
+  display: block;
+  max-width: 360px;
+  width: 100%;
+}
+
+.google-btn button {
+  display: flex;
+  max-width: 360px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px 0 #ddd;
+  gap: 5px;
+}
+
+.google-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.google-icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.google-text {
+  width: 100%;
+  text-align: center;
+}
+
+.google-text span {
+  color: $color-black;
+  font-family: $font-en-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+}
+
+.twitter-btn {
+  width: 50px;
+  height: 50px;
+}
+
+.twitter-btn button {
+  background-color: #f2f2f2;
+  color: #6e6d7a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 17px;
+  box-shadow: 0px 2px 4px 0 #dddd;
+}
+
+.or {
+  display: block;
+  margin-top: 40px;
+}
+
+.or hr {
+  overflow: visible;
+  padding: 0;
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  color: #454545;
+  text-align: center;
+  position: relative;
+}
+
+.or hr::after {
+  content: "or";
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6e6d7a;
+  font-family: $font-en-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.form-area {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.form-area form mat-form-field {
+  display: block;
+  width: 100%;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  flex-basis: 50%;
+  gap: 10px 10px;
+}
+
+.f-name, .u-name {
+  display: block;
+  width: 100%;
+}
+
+.form-area form mat-form-field mat-label {
+  font-family: $font-en-primary;
+  color: $color-black;
+  font-size: 16px;
+}
+
+.privacy-area {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.check {
+  margin-right: 10px;
+}
+
+.privacy-info {
+  width: 100%;
+}
+
+.privacy-info p {
+  display: block;
+  color: #6e6d7a;
+  font-family: $font-en-open-sans;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.privacy-info p a {
+  display: inline;
+  margin-left: 3px;
+  color: #4f3cc9;
+  font-family: $font-en-open-sans;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.forget-pass {
+  display: block;
+  margin-bottom: 20px;
+  text-align: right;
+  position: relative;
+  top: -10px;
+}
+
+.forget-pass a {
+  color: #4f3cc9;
+  font-family: $font-en-open-sans;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+}
+
+.sub-mit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.sub-mit .n-signup {
+  font-family: $font-en-primary;
+  font-size: 16px;
+  display: block;
+  max-width: 250px;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+.sub-mit .d-signup{
+  font-family: $font-en-primary;
+  font-size: 16px;
+  display: block;
+  max-width: 250px;
+  width: 100%;
+  padding: 5px 0px;
+  border-color: $color-primary;
+}
+
+@media(max-width: 1020px) {
+  .main-area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .left-side {
+    display: none;
+  }
+}
+
+@media(max-width: 500px) {
+  .name {
+    display: block;
+  }
+  .main-form {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin-top: 3vh;
+  }
+}

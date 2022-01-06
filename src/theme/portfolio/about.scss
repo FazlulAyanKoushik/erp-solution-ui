@@ -1,0 +1,204 @@
+@import 'src/theme/variables';
+
+.about-section-1{
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 10vh;
+}
+.about-section1-main{
+    display: grid;
+    grid-template-columns: 2.4fr 5fr;
+    grid-template-rows: auto;
+    grid-gap: 25px 30px;
+}
+.about-section1-img{
+    display: block;
+    width: 100%;
+}
+.about-section1-img img{
+    height: auto;
+    width: 100%;
+}
+.about-section1-details{
+    display: block;
+}
+.bio{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.bio-title{
+    display: block;
+    margin-bottom: 8px;
+}
+.bio-title h3{
+    color: $heading-color;
+    font-weight: 500;
+    font-style: normal;
+    font-family: $font-en-primary;
+    font-size: 23px;
+    display: block;
+    margin: 0;
+}
+.bio-description{
+    display: block;
+}
+.bio-description img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: -5px;
+}
+.bio-description p{
+    display: block;
+    width: 100%;
+    color: $primary-color;
+    font-family: $font-en-josh;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+.other-dertails-area{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px 20px 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px 30px;
+}
+.other-details-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 15px;
+    margin-bottom: 10px;
+}
+.other-details-left{
+    display: block;
+}
+.other-details-left span{
+    color:$heading-color;
+    font-family: $font-en-josh;
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 400;
+    box-sizing: border-box;
+    display: block;
+}
+.other-details-right{
+    display: block;
+}
+.other-details-right span{
+    color: $primary-color;
+    font-family: $font-en-josh;
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 400;
+    display: block;
+}
+.cv-download-btn{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+}
+.cv-download-btn a{
+    color: $secondery-color;
+    font-weight: 400;
+    font-family: $font-en-josh;
+    font-style: normal;
+    font-size: 19px;
+    background: #FFD9C9;
+   display: inline-block;
+   padding: 12px 25px;
+   box-sizing: border-box;
+   border-radius: 30px;
+   transform: scale(1);
+   transition: all 0.3s linear;
+}
+.cv-download-btn a i{
+    font-size: 16px;
+    display: inline-block;
+}
+.cv-download-btn a:hover{
+    transform: scale(0.9);
+}
+
+@media(max-width:756px){
+    .about-section1-main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-section1-img img{
+        max-width: 300px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media(max-width:500px){
+    .other-dertails-area{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0 0!important;
+    }
+}
+/**** about-section-2 ***/
+.about-section-2{
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 10vh;
+}
+.about-section2-main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 20px;
+    grid-template-rows: auto;
+}
+
+@media(max-width:800px){
+    .about-section2-main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:550px){
+    .about-section2-main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/**** about-section-3 ****/
+.about-section-3{
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-bottom: 5vh;
+}
+.about-section3-main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px 20px;
+    box-sizing: border-box;
+}
+@media(max-width:700px){
+    .about-section3-main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

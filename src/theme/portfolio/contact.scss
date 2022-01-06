@@ -1,0 +1,162 @@
+@import 'src/theme/variables';
+
+.contact-section-1{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 6vh;
+}
+.contact-section1-main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px 20px;
+}
+/*** contact-card ****/
+.contact-card{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+.contact-card-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    background-color: rgb(230, 225, 255);
+    height: 50px;
+    border-radius: 11px;
+}
+.contact-card-icon i{
+    font-size: 30px;
+    font-weight: 600;
+    display: block;
+    color: #5848b4;
+    font-style: normal
+}
+.contact-card-details{
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.contact-card-details h4{
+    color: $heading-color;
+    font-weight: 500;
+    font-family: $font-en-josh;
+    font-style: normal;
+    font-size: 20px;
+    display: block;
+    margin: 0;
+    margin-bottom:6px;
+}
+.contact-card-details span{
+    display: block;
+    color: $primary-color;
+    font-family: $font-en-primary;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+
+/*** contact-section-2 ***/
+.contact-section-2{
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 5vh;
+}
+.contact-form-area {
+    display: block;
+}
+.contact-form-area form{
+    display: block;
+}
+.contact-form-area form mat-form-field{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+
+}
+::ng-deep.contact-form-area form mat-form-field .mat-form-field-wrapper{
+    padding: 0!important;
+}
+::ng-deep.contact-form-area form mat-form-field input{
+    border: none;
+    font-family: $font-en-primary;
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+::ng-deep.contact-form-area form mat-form-field mat-label{
+    color: $primary-color;
+    font-family: $font-en-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+}
+::ng-deep.contact-form-area form mat-form-field mat-error{
+   padding-top: 20px;
+   box-sizing: border-box;
+}
+.top-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 20px;
+    grid-template-rows: auto;
+}
+
+.submit-btn{
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+}
+.submit-btn button{
+    color: #FF6525;
+    background: #FFD9C9;
+    display:block;
+    max-width: 180px;
+    width: 100%;
+    border-radius: 20px;
+    font-family: $font-en-josh;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    line-height: 1;
+    padding: 16px 28px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    transform: scale(1.05);
+    transition: all 0.2s linear;
+}
+.submit-btn button:hover{
+    transform: scale(1);
+}
+
+@media(max-width:850px){
+    .contact-section1-main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:600px){
+    .contact-section1-main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-area{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+    }
+}

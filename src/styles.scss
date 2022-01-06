@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/theme/base";
+@import "src/theme/material/theme";
+@import "src/theme/fonts";
+@import "src/theme/mixins";
+
+
+ // Font Awesome
+//  @import "~@fortawesome/fontawesome-free/css/all.css";
+    @import "~@fortawesome/fontawesome-free/css/all.css";
+/** additional-page-problem-solve-code****/
+.page-content,.wpb_column{
+    float: none!important;
+}
+#post-5193,.entry-content,article{
+    float: none!important;
+
+}
+
+::ng-deep.section1-description h3{
+    background: transparent;
+}
