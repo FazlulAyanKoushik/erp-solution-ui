@@ -23,7 +23,6 @@
     "@angular/router": "~12.2.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@kolkov/angular-editor": "^1.2.0",
-    "C": "~1.2.36",
     "mat-select-filter": "^2.3.9",
     "ngx-mat-select-search": "^3.3.3",
     "ngx-pagination": "^5.1.1",
