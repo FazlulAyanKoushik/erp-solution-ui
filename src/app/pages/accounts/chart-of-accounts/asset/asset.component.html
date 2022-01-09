@@ -34,7 +34,7 @@
             <td>{{data.cash}}</td>
             <td>{{data.currentBalance}}</td>
             <td class="td-action">
-              <button [routerLink]="['edit-blog', data._id]" mat-mini-fab>
+              <button (click)="openEditDialog('cash',data.cash)" mat-mini-fab>
                 <mat-icon>edit</mat-icon>
               </button>
               <!-- <a style="margin-left: 5px;" mat-mini-fab color="primary" [routerLink]="['/blog/', data?.slug]"

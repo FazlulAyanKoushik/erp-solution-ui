@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { Component, Inject, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSelectChange } from '@angular/material/select';
 
 @Component({
@@ -17,10 +18,15 @@ export class AddNewCashComponent implements OnInit {
   public filteredCatList: any[];
   //isSubCat
   isSubCategory=false;
-  constructor() { }
+  constructor(
+    private fb: FormBuilder,
+    public dialogRef: MatDialogRef<AddNewCashComponent>,
+              @Inject(MAT_DIALOG_DATA) public data: any
+  ) { }
 
   ngOnInit(): void {
     this.getDummyData();
+    this.initFormData();
   }
 
   getDummyData(){
@@ -30,6 +36,17 @@ export class AddNewCashComponent implements OnInit {
         categoryName:'AB Bank',
       }
     ]
+  }
+  /* 
+  * Initialze Dataform
+  */
+  initFormData(){
+
+    this.dataForm=this.fb.group({
+      accountName: [this.data?this.data.accountName:null, Validators.required],
+      isSubAccount: [this.data?true:false],
+      parentAccount: [this.filteredCatList],
+    })
   }
 
   /**
@@ -45,5 +62,13 @@ export class AddNewCashComponent implements OnInit {
 
   onSelectSubCategory(){
     this.isSubCategory=!this.isSubCategory
+  }
+
+  onSubmit(){
+
+  }
+
+  onDismiss(): void {
+    this.dialogRef.close(false);
   }
 }

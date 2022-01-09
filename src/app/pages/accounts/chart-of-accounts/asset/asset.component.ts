@@ -28,14 +28,94 @@ export class AssetComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getDummyData();
   }
   
+  /* 
+  *Dummy Data
+   */
+
+  getDummyData(){
+   let blog={
+      cash:"Petty Cash",
+      currentBalance:2300
+    }
+    this.allBlogs.push(blog);
+  }
   /*
   * openAddComponentDialog
   */
   openAddComponentDialog(dialogName:string){
     if(dialogName === 'cash'){
       const dialogRef = this.dialog.open(AddNewCashComponent, {
+        data:null,
+        panelClass: ['theme-dialog'],
+        width: '50%',
+        maxWidth: '1050px',
+        autoFocus: false,
+        disableClose: false
+      });
+    }
+    if(dialogName === 'bank'){
+        const dialogRef = this.dialog.open(AddNewBankComponent, {
+        panelClass: ['theme-dialog'],
+        width: '50%',
+        maxWidth: '1050px',
+        autoFocus: false,
+        disableClose: false
+      });
+    }
+    if(dialogName === 'mobileBank'){
+      const dialogRef = this.dialog.open(AddNewMobileBankComponent, {
+        panelClass: ['theme-dialog'],
+        width: '50%',
+        maxWidth: '1050px',
+        autoFocus: false,
+        disableClose: false
+      });
+    }
+    if(dialogName === 'receivable'){
+      const dialogRef = this.dialog.open(AddNewReceivableComponent, {
+        panelClass: ['theme-dialog'],
+        width: '50%',
+        maxWidth: '1050px',
+        autoFocus: false,
+        disableClose: false
+      });
+    } 
+    if(dialogName === 'equipment'){
+      const dialogRef = this.dialog.open(AddNewEquipmentComponent,
+         {
+        panelClass: ['theme-dialog'],
+        width: '50%',
+        maxWidth: '1050px',
+        autoFocus: false,
+        disableClose: false
+      });
+    }
+    if(dialogName === 'inventory'){
+      const dialogRef = this.dialog.open(AddNewInventoryComponent, {
+        panelClass: ['theme-dialog'],
+        width: '50%',
+        maxWidth: '1050px',
+        autoFocus: false,
+        disableClose: false
+      });
+    }
+
+    
+  }
+
+  /* 
+  * openEditDialog()
+  */
+  openEditDialog(dialogName,i){
+    console.log(i)
+    if(dialogName === 'cash'){
+      const dialogRef = this.dialog.open(AddNewCashComponent, {
+        data:{
+          accountName:i,
+        },
         panelClass: ['theme-dialog'],
         width: '50%',
         maxWidth: '1050px',
@@ -88,11 +168,7 @@ export class AssetComponent implements OnInit {
         disableClose: false
       });
     }
-
-    
   }
-
-  
   onAllSelectChange(event){
 
   }

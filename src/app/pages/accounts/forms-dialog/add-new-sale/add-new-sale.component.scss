@@ -1,0 +1,31 @@
+@import "src/theme/variables";
+@import "src/theme/exports/table-scroll";
+@import "src/theme/exports/search-table";
+@import "src/theme/exports/top-data-header";
+
+
+.add-dialog{
+    h2{
+        background-color: $color-primary;
+        color: white;
+
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+
+.add-input{
+    width: 90%;
+}
+}
+.button-container{
+    display: flex;
+    button{
+        margin-left: 10px;
+    }
+}
